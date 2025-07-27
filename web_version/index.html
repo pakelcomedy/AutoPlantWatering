@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Plant Watering</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🌱 Auto Plant Watering</h1>
+    </header>
+
+    <section id="status">
+      <div class="card">
+        <h2>Soil Moisture</h2>
+        <p id="moisture-value">--%</p>
+      </div>
+      <div class="card">
+        <h2>Pump Status</h2>
+        <p id="pump-status">OFF</p>
+      </div>
+    </section>
+
+    <section id="controls">
+      <button id="refresh-btn">Refresh</button>
+      <button id="manual-toggle">Toggle Pump</button>
+    </section>
+
+    <footer>
+      <p>Last updated: <span id="last-updated">--:--:--</span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

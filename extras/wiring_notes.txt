@@ -1,0 +1,46 @@
+AutoPlantWatering - Wiring Notes
+===============================
+
+1. Soil Moisture Sensor
+-----------------------
+Signal Pin  -> A0 (Analog input)
+VCC         -> 5V
+GND         -> GND
+
+2. Water Pump (via relay or transistor)
+---------------------------------------
+Pump VCC    -> 5V external (not from Arduino!)
+Pump GND    -> GND shared with Arduino
+Pump Control Pin -> D7 (Digital output)
+
+* If using a relay:
+  - IN (control) -> D7
+  - VCC -> 5V
+  - GND -> GND
+
+* If using a transistor (e.g. NPN 2N2222):
+  - Base -> D7 (via 1kΩ resistor)
+  - Collector -> Pump GND
+  - Emitter -> GND
+
+3. LCD Display (I²C)
+--------------------
+SDA -> A4  (Uno/Nano)
+SCL -> A5  (Uno/Nano)
+VCC -> 5V
+GND -> GND
+
+* I²C Address: Usually 0x27 or 0x3F (scan if unknown)
+
+Power Notes:
+------------
+- Pump might need more current than Arduino can supply.
+- Use external 5V power with common ground.
+- Always protect with diode (e.g. 1N4007) across pump terminals.
+
+Tested on:
+----------
+- Arduino Uno R3
+- LCD 16x2 I2C (0x27)
+- Soil Moisture Sensor FC-28
+- 5V Mini Water Pump via relay module

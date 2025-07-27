@@ -1,0 +1,104 @@
+/* style.css */
+
+/* Reset & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#app {
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: #2e8b57;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Status cards */
+#status {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+.card {
+  background: #fafafa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: center;
+}
+.card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+.card p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2e8b57;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background: #f7fafc;
+}
+#controls button {
+  flex: 1;
+  margin: 0 0.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+#refresh-btn {
+  background: #2e8b57;
+  color: #fff;
+}
+#refresh-btn:hover {
+  background: #276c49;
+}
+#manual-toggle {
+  background: #ffa500;
+  color: #fff;
+}
+#manual-toggle:hover {
+  background: #e69500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  background: #fafafa;
+  border-top: 1px solid #e1e4e8;
+}
