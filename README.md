@@ -21,3 +21,4 @@ AutoPlantWatering/
     ├── style.css
     └── script.js
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e8813db1-c090-4ce6-9c5e-5a43cd72fd57" />
